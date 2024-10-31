@@ -202,14 +202,13 @@ var Engine = {
 	downtime: 0,
 	save() {
 		return {
-			initialTick: this.initialTick,
 			elapsed: this.elapsed,
 			gameTime: this.gameTime
 		};
 	},
 	loadSave(data) {
-		this.initialTick = data.initialTick;
 		this.elapsed = data.elapsed;
+		this.initialTick = now - this.elapsed;
 		this.gameTime = data.gameTime;
 	},
 	tick() {
