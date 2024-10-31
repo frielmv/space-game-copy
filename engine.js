@@ -208,7 +208,7 @@ var Engine = {
 	},
 	loadSave(data) {
 		this.elapsed = data.elapsed;
-		this.initialTick = now - this.elapsed;
+		this.initialTick = performance.now() - this.elapsed;
 		this.gameTime = data.gameTime;
 	},
 	tick() {
