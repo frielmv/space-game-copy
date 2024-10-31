@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+:root {
+	--ui: #b4b4b4;
+	--red: #b43232;
+	--background: rgba(0, 0, 0, 0.6);
+	--filledBackground: rgba(180, 180, 180, 0.25);
+	--spacing: 6px;
+	--line: 1.5px;
+	--uiFade: 0.5s;
+}
+body {
+	transition: filter var(--uiFade);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	background: black;
+}
+* {
+	margin: 0;
+	padding: 0;
+	color: var(--ui);
+	box-sizing: border-box;
+	line-height: calc(1em + var(--spacing));
+	text-align: center;
+	font-family: Abel;
+	font-size: 16px;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1em;
+
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+div, img {
+	position: absolute;
+}
+#loading {
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	z-index: 99;
+	transition: opacity 1.5s ease-in;
+	pointer-events: none;
+}
+img {
+	translate: -50% -50%;
+	aspect-ratio: 1 / 1;
+}
+.leg-inner, .leg-outer {
+	transition: transform 1s;
+}
+.solar-panel, .drill-inner, .drill-outer {
+	transition: transform 0.5s;
+}
+.solar-panel-cover {
+	transition: transform 0.25s;
+}
+#markers, #mapMarkers, .marker {
+	transition: opacity var(--uiFade);
+}
+.marker > img {
+	transition: width var(--uiFade);
+}
+.resourceOverlay {
+	transition-property: width, opacity;
+	transition-duration: var(--uiFade);
+}
+#mapTargetAngle {
+	transition: opacity var(--uiFade), height 0.125s;
+}
+.engine-plume {
+	transition: opacity 0.25s;
+}
+.rcs-plume-top, .rcs-plume-bottom {
+	transition: opacity 0.125s;
+}
+.engine {
+	transition: rotate 0.5s;
+}
+.timeWarpArrow {
+	transition: opacity var(--uiFade);
+}
+p {
+	padding: 0;
+	margin: calc(var(--spacing) / 2);
+}
+hr {
+	border: none;
+	height: 1px;
+	background-color: var(--ui);
+	margin-top: calc(var(--spacing) / 2);
+	margin-bottom: calc(var(--spacing) / 2);
+}
+.uiControl {
+	cursor: pointer;
+}
+.body, #starfield {
+	transition: filter 1.5s;
+}
+.background {
+	background: var(--background);
+	padding: calc(var(--spacing) / 2);
+	margin: var(--spacing);
+	border-radius: var(--spacing);
+}
+.button {
+	margin: calc(var(--spacing) / 2);
+	position: relative;
+	transition: opacity var(--uiFade);
+	width: max-content;
+	opacity: 1;
+}
+.button.disabled {
+	opacity: 0.25;
+}
+.button:not(.disabled):hover {
+	text-decoration: underline;
+}
+.button::before {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -0.3em;
+	margin-bottom: 2px;
+	content: "";
+	background: url("assets/controls/bullet-open.svg");
+	width: 16px;
+	height: 16px;
+}
+.button.active::before, .button:not(.disabled):active::before {
+	content: url("assets/controls/bullet-closed.svg");
+}
