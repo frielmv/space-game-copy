@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="a"
+   viewBox="0 0 25 25"
+   version="1.1"
+   sodipodi:docname="prograde.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   width="25"
+   height="25"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview65"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="3.595"
+     inkscape:cx="100"
+     inkscape:cy="100"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="a" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.b{fill:#0064b4;}.c{fill:#3ca000;}.d{stroke:#b4b4b4;}.d,.e,.f,.g{stroke-miterlimit:10;}.d,.e,.f,.g,.h{fill:none;stroke-linecap:round;}.e{stroke-width:.5px;}.e,.g{stroke:#3ca000;}.f{stroke:#0064b4;}.f,.g,.h{stroke-width:.75px;}.h{stroke:#6400aa;stroke-linejoin:round;}</style>
+  </defs>
+  <g
+     id="g20"
+     transform="translate(-137.5,-87.5)">
+    <circle
+       class="g"
+       cx="150"
+       cy="100"
+       r="5"
+       id="circle10" />
+    <line
+       class="g"
+       x1="160"
+       y1="100"
+       x2="155"
+       y2="100"
+       id="line12" />
+    <line
+       class="g"
+       x1="140"
+       y1="100"
+       x2="145"
+       y2="100"
+       id="line14" />
+    <line
+       class="g"
+       x1="150"
+       y1="90"
+       x2="150"
+       y2="95"
+       id="line16" />
+    <circle
+       class="c"
+       cx="150"
+       cy="100"
+       r="0.375"
+       id="circle18" />
+  </g>
+</svg>
