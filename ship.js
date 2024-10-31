@@ -360,7 +360,7 @@ var Ship = {
 			this.velRot != 0); // velocity is greater than 0; decelerate or accelerate
 
 		this.rotDir = 0; // whether to accelerate or decelerate rotation
-		if(Resources.rcsFuel > 0) {
+		if(Resources.rcsFuel > 0 || this.engineFiring) {
 			if(
 				(this.velRot != 0 && Math.sign(angleDiff(this.targetAngle, this.angle)) != Math.sign(this.velRot)) // overshot target position; accelerate the other way
 				||
